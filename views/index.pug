@@ -1,0 +1,14 @@
+extends layout
+
+block header    
+    nav(class=['breadcrumb'], aria-label='breadcrumbs')
+        ul
+            li(class='is-active')
+                a(href='./' aria-current='page') Home
+
+block content
+    div.container
+        div(class=['columns', 'is-centered'])
+            div(class=['column', 'has-text-centered', 'is-half'])
+                h1(class=['title', 'is-1']) Example
+                p example for template
